@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 align="center">Student Form</h1>
+    <div class="container">
+        <div class="box1">
+            <table border="1">
+                <tr>
+                    <td class="field-title">Name</td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="field-title">Age</td>
+                    <td><input id="age" type="number"></td>
+                </tr>
+                <tr>
+                    <td class="field-title">Gender</td>
+                    <td>
+                        <input id="male" type="radio" name="gender" value="Male">Male</input>
+                        <input id="female" type="radio" name="gender" value="Female">Female</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="field-title">Course</td>
+                    <td><select id="course" name="Course" style="width: 100%">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="field-title">E-mail</td>
+                    <td><input id="email" type="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: fit-content">
+                        <button onclick="save()" id="save-btn">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="box2">
+            <table border="1" id="resultset">
+                <tr>
+                    <td class="field-title">NAME</td>
+                    <td class="field-title">AGE</td>
+                    <td class="field-title">COURSE</td>
+                    <td class="field-title">GENDER</td>
+                    <td class="field-title">EMAIL</td>
+                    <td class="field-title">ACTION</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
