@@ -31,7 +31,7 @@
 ## 📂 Project Structure
 
 ```
-Student-Form/
+student-form/
 └── index.html                 # Main HTML file for the app's UI
 └── student-icon.png           # Icon for student branding
 └── styles.css                 # Custom CSS styles for the app
